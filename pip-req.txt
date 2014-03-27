@@ -1,3 +1,5 @@
-tornado
-requests
 gunicorn
+peewee
+pytest
+requests
+tornado
