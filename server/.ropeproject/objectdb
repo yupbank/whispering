@@ -1,22 +1,0 @@
-Ä}q(Umodels/followship.pyq}qUFollowShip.followcrope.base.oi.memorydb
-ScopeInfo
-q)Åq}q(UunknownÖqhUnoneqÖq	áUunknownÖq
-UinstanceqUdefinedqUmodels/user.pyUUserqáÜhh	áh
-u}qÜbsUconftest.pyq}qUcreate_test_userqh)Åq}qUbuiltinUstrÜqÖh
-s}qÜbsUmodels/base.pyq}Uapis/base.pyq}qUBaseHandler.__init__h)Åq}qUinstanceUdefinedhUBaseHandleráÜUnoneÖÜUunknownÖs}qÜbsUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.py}q(UDatabase.closeh)Åq}qhhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyUSqliteDatabaseqáÜÖh
-s}q ÜbUModel.dirty_fieldsh)Åq!}q"hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyUModelq#áÜÖUbuiltinq$Ulistq%hás}q&ÜbUBaseModel.__new__h)Åq'}q((hh$Utupleq)há(h$Udictq*h	h	th	ths}q+ÜbUCharField.__init__h)Åq,}q-(hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyU	CharFieldq.áÜh	h	h	th
-s}q/ÜbUwith_metaclassq0h)Åq1}q2hUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyU	BaseModelq3áh	Ühs}q4ÜbUModel.createh)Åq5}q6(hh	Üh
-hh	Üh
-h	h	Üh
-hhÜh
-u}q7ÜbUModel.create_tableh)Åq8}q9h	h	Üh
-s}q:ÜbUForeignKeyField.__init__h)Åq;}q<((hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyUForeignKeyFieldq=áÜhUmodels/user.pyháhh	h	h	h	h	h	th
-(hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyh=áÜh	h	h	h	h	h	h	h	th
-u}q>ÜbUField.__init__h)Åq?}q@((hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyUIntegerFieldqAáÜh	h	h	h	h	h	h	h	h	h	h	h	th
-(hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyU	TextFieldqBáÜh	h	h	h	h	h	h	h	h	h	h	h	th
-u}qCÜbUDatabase.__init__h)ÅqD}qE((hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyUMySQLDatabaseqFáÜh	h	h	h	h	h	h	th
-(hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyháÜhh	h	h	h	h	h	th
-(hhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyhFáÜhhh	h	h	h	h	th
-u}qGÜbUDatabase.get_connh)ÅqH}qIhhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyháÜÖh
-s}qJÜbUDatabase.connecth)ÅqK}qLhhUG/Users/WooParadog/Library/Python/2.7/lib/python/site-packages/peewee.pyháÜÖh
-s}qMÜbuu.
