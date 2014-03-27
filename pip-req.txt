@@ -3,3 +3,4 @@ peewee
 pytest
 requests
 tornado
+wtforms
