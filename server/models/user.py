@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from peewee import IntegerField, CharField
-from .base import BaseModel
+from peewee import CharField
+from .base import BaseModel, database
 
 class User(BaseModel):
     name = CharField()
@@ -16,3 +16,12 @@ class User(BaseModel):
 
     def get_followees(self):
         return (f.followeree for f in self.followers)
+
+    @database.commit_on_success
+    def whisper(self, gossip):
+        from .gossip import Gossip
+        for friend in self.get_followers():
+            Gossip.create(
+                    content=gossip,
+                    received_user=friend
+                    ).save()

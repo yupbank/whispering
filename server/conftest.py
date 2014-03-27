@@ -12,11 +12,16 @@ config.DATABASE_CONNECTION_PARAMS = {
         }
 
 def load_databases():
-    os.unlink(test_db)
+    try:
+        os.unlink(test_db)
+    except OSError:
+        pass
     from models.user import User
     from models.followship import FollowShip
+    from models.gossip import Gossip
     User.create_table()
     FollowShip.create_table()
+    Gossip.create_table()
 
 load_databases()
 
@@ -26,10 +31,10 @@ def create_test_user(name):
     user1.save()
     return user1
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def user1():
     return create_test_user('test1')
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def user2():
     return create_test_user('test1')
