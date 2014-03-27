@@ -4,8 +4,9 @@
 
 import tornado.web
 from apis import api_handlers
+from config import DEBUG
 
-app = tornado.web.Application(api_handlers, debug=True)
+app = tornado.web.Application(api_handlers, debug=DEBUG)
 
 if __name__ == '__main__':
     import tornado
