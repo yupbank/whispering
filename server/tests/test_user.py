@@ -12,3 +12,9 @@ class TestUserCase(BaseTestCase):
 
     def test_send_gossip(self, user1, user2):
         user1.follow(user2)
+
+    def test_wolala(self):
+        pass
+
+    def test_wolala2(self):
+        pass

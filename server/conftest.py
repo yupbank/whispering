@@ -3,22 +3,22 @@
 
 import os
 import pytest
-from peewee import SqliteDatabase
+import config
 
-TEST_DB_PATH = 'tests/test.db'
+test_db = "tests/test.db"
+config.DATABASE_BACKEND = "sqlite3"
+config.DATABASE_CONNECTION_PARAMS = {
+        'database': test_db
+        }
 
-@pytest.yield_fixture
-def database(monkeypatch):
-    database = SqliteDatabase(TEST_DB_PATH)
-    database.connect()
-    monkeypatch.setattr("models.base.BaseModel._meta.database", database)
+def load_databases():
+    os.unlink(test_db)
     from models.user import User
     from models.followship import FollowShip
     User.create_table()
     FollowShip.create_table()
-    yield
-    database.close()
-    os.unlink(TEST_DB_PATH)
+
+load_databases()
 
 def create_test_user(name):
     from models.user import User
