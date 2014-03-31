@@ -4,4 +4,4 @@ pytest
 requests
 tornado
 wtforms
-flake8
+mockredis==0.1.3dev
