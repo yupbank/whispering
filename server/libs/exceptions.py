@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 class WhisperBaseException(Exception):
-    err_no = 0
-    msg = ""
+    code = 1000
+    msg = "unknown error"
 
 class HasAlreadyFolowedException(WhisperBaseException):
-    err_no = 1001
-    msg = "已经关注过"
+    code = 1001
+    msg = "User Already followed"
